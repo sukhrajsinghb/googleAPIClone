@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./bundle.js"></script>
+  </head>
+  <body class="primary">
+    <section>
+      <header>
+        <div class="links">links</div>
+        <div></div>
+        <div class="links">other links</div>
+      </header>
+
+      <main>
+        <div class="title-img">
+          <img src="./img/google-darkmode.png" alt="Logo of Google" />
+        </div>
+        <div class="form-div">
+          <form id="search-form" class="search-div">
+            <div></div>
+            <label for="search"><a href=""></a></label>
+            <input
+              class="search-bar primary"
+              id="search"
+              type="text"
+              name="search"
+            />
+          </form>
+        </div>
+        <button type="submit" form="search-form">Google Search</button>
+        <button
+          type="feeling-lucky"
+          onclick="location.href='https://wikipedia.org/wiki/Special:Random';"
+        >
+          I'm Feeling Lucky
+        </button>
+      </main>
+
+      <div class="grow"></div>
+
+      <footer>The mighty Footer</footer>
+    </section>
+  </body>
+</html>
