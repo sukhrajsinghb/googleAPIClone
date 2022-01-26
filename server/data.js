@@ -11,4 +11,4 @@ let search = [
     {id: 10, title: 'Fish'}
 ]
 
-module.exports = {search}
+module.exports = search;

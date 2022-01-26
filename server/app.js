@@ -21,7 +21,7 @@ app.get('/search', (req, res) => {
 app.get('/search/:name', (req, res) => {
     try {
         let requestedSearch = req.params.name
-        let matchingSearch = search.find((item) => item.name.toLowerCase() === requestedSearchName.toLowerCase());
+        let matchingSearch = search.find((item) => item.title.toLowerCase() === requestedSearch.toLowerCase());
         if(!matchingSearch) { throw new Error(`We don't have a page called ${requestedSearch}!`)}
         res.json(matchingSearch)
     } catch (error) {
@@ -29,4 +29,4 @@ app.get('/search/:name', (req, res) => {
     }
 })
 
-module.exports = {app};
+module.exports = app;
