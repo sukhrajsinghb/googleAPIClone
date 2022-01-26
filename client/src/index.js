@@ -1,15 +1,19 @@
 const form = document.querySelector("form");
 
 form.addEventListener("submit", onClick);
-form.addEventListener("feeling-lucky", feelingLucky);
 
 async function onClick(e) {
+  // console.log(form[0].value);
   e.preventDefault();
-  search = document.querySelector("#search").value;
-  await fetch(`127.0.0.1:3000/${search}`);
+  localStorage.setItem("search", form[0].value);
+  location.href = "/search.html";
+
+  // search = document.querySelector("#search").value;
+  //   await fetch(`127.0.0.1:3000/search/${search}`).then((resp) => resp.json());
 }
 
-function feelingLucky(e) {
-  e.preventDefault();
-  console.log(e);
+if (document.title !== "Google") {
+  result = localStorage.getItem("search");
+  document.title = result;
+  document.querySelector("form")[0].value = result;
 }
