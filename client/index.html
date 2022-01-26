@@ -21,22 +21,23 @@
           <img src="./img/google-darkmode.png" alt="Logo of Google" />
         </div>
         <div class="form-div">
-          <form action="">
-            <div class="search-div">
-              <label for="search"><a href=""></a></label>
-              <input
-                class="search-bar primary"
-                id="search"
-                type="text"
-                name="search"
-              />
-              <a href=""></a>
-            </div>
-            <br />
-            <button type="submit">Google Search</button>
-            <button type="feeling-lucky">I'm Feeling Lucky</button>
+          <form id="search-form" class="search-div">
+            <label for="search"><a href=""></a></label>
+            <input
+              class="search-bar primary"
+              id="search"
+              type="text"
+              name="search"
+            />
           </form>
         </div>
+        <button type="submit" form="search-form">Google Search</button>
+        <button
+          type="feeling-lucky"
+          onclick="location.href='https://wikipedia.org/wiki/Special:Random';"
+        >
+          I'm Feeling Lucky
+        </button>
       </main>
 
       <div></div>

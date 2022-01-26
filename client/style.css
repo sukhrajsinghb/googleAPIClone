@@ -19,6 +19,7 @@ button {
   padding: 8px 10px;
   border-radius: 5px;
   color: white;
+  margin: 0 20px;
 }
 
 .search-bar {
@@ -39,7 +40,8 @@ button {
   border: 2px solid #5f6368;
   height: 30px;
   border-radius: 50px;
-  padding: 10px 0;
+  padding: 5px 0;
+  margin-bottom: 15px;
 }
 
 .form-div {
