@@ -1,11 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0;
+}
 main {
   text-align: center;
 }
 
+header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 img {
   width: 300px;
-  align-content: center;
-  padding-top: 10rem;
+  padding-top: 7rem;
   margin-bottom: 2rem;
 }
 section {
@@ -22,10 +34,28 @@ button {
   margin: 0 20px;
 }
 
+footer {
+  bottom: 0;
+  text-align: center;
+  background-color: #171717;
+  width: 100vw;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+hr {
+  width: 100vw;
+}
+
 .search-bar {
   width: 450px;
   border: 0;
   outline: none;
+}
+
+.search-div:hover,
+.search-bar:hover {
+  background-color: #5f6368;
 }
 
 .primary {
@@ -47,4 +77,34 @@ button {
 .form-div {
   display: flex;
   justify-content: center;
+}
+
+.links {
+  height: 100px;
+  padding: 10px;
+  align-content: center;
+}
+
+.img-google {
+  height: 30px;
+  width: 100px;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.title-img {
+  align-content: center;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-search {
+  margin: 0;
+  padding: 0;
+}
+
+.grow {
+  min-height: 70vh;
 }
