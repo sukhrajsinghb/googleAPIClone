@@ -1,12 +1,12 @@
 [
     {
     "title": "Dog",
-    "preview": "The dog or domestic dog (Canis familiaris[4][5] or Canis lupus familiaris[5]) is a domesticated descendant of the wolf which is characterized by an upturning tail.",
+    "preview": "The dog or domestic dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of the wolf which is characterized by an upturning tail.",
     "link": "https://en.wikipedia.org/wiki/Dog" 
     },
     {
     "title": "Cat",
-    "preview": "The cat (Felis catus) is a domestic species of a small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and is often referred to as the domestic cat.",
+    "preview": "The cat (Felis catus) is a domestic species of a small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat.",
     "link": "https://en.wikipedia.org/wiki/Cat" 
     },
     {
