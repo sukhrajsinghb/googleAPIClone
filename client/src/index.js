@@ -1,3 +1,4 @@
+const { buildResults } = require("./helpers.js");
 const form = document.querySelector("form");
 
 form.addEventListener("submit", onClick);
@@ -16,4 +17,11 @@ if (document.title !== "Google") {
   result = localStorage.getItem("search");
   document.title = result;
   document.querySelector("form")[0].value = result;
+
+  fetch(`http://localhost:3000/search/${result}`)
+    .then((resp) => resp.json())
+    .then((results) => {
+      let site = document.querySelector("main");
+      buildResults(results, site);
+    });
 }
