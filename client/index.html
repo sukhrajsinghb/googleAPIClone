@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./bundle.js" />
+    <script defer src="./bundle.js"></script>
   </head>
   <body class="primary">
     <section>
@@ -24,12 +24,17 @@
           <form action="">
             <div class="search-div">
               <label for="search"><a href=""></a></label>
-              <input class="search-bar primary" type="text" name="search" />
+              <input
+                class="search-bar primary"
+                id="search"
+                type="text"
+                name="search"
+              />
               <a href=""></a>
             </div>
             <br />
             <button type="submit">Google Search</button>
-            <button type="button">I'm Feeling Lucky</button>
+            <button type="feeling-lucky">I'm Feeling Lucky</button>
           </form>
         </div>
       </main>
