@@ -1,9 +1,36 @@
 main {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    height: 100px;
-    width: 200px;
-    align-content: center;
+  width: 300px;
+  align-content: center;
+  padding-top: 10rem;
+  margin-bottom: 2rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+.search-bar {
+  width: 450px;
+  border: 0;
+}
+
+.primary {
+  background-color: #202124;
+}
+
+.search-div {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  border: 2px solid #5f6368;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+.form-div {
+  display: flex;
+  justify-content: center;
 }
