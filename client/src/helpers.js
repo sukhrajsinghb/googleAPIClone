@@ -1,21 +1,26 @@
 function buildResults(results, site) {
+  console.log(results);
   if (results.title) {
-    buildCard;
+    buildCard(results, site);
   } else {
     for (let item in results) {
-      site.textContent += results[item].title;
+      buildCard(results[item], site);
       site.innerHTML += "<br><hr>";
     }
   }
 }
 
 function buildCard(obj, site) {
+  console.log(obj);
   url = obj.link;
-  site.innerHTML += `<a href=${url}>${obj.title}</a>`;
-  site.innerHTML += "<br>";
-  site.textContent += obj.preview;
-  site.innerHTML += "<br>";
-  site.innerHTML += `<a href=${url}>${url}</a>`;
+  site.innerHTML += `
+  <p>
+    <a href=${url}>${obj.title}</a>
+    <br>
+    ${obj.preview}
+    <br>
+    <a href=${url}>${url}</a>;
+  </p>`;
 }
 
 module.exports = { buildResults };

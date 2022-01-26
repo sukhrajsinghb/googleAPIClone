@@ -47,6 +47,14 @@ hr {
   width: 100vw;
 }
 
+p {
+  margin: 10px 20px;
+  text-align: left;
+}
+
+a {
+  color: white;
+}
 .search-bar {
   width: 450px;
   border: 0;
