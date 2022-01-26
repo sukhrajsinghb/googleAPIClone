@@ -54,7 +54,9 @@ hr {
 }
 
 .search-div:hover,
-.search-bar:hover {
+.search-div:hover .search-bar,
+.search-div:focus-within,
+.search-bar:focus {
   background-color: #5f6368;
 }
 
